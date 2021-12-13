@@ -1,0 +1,50 @@
+{
+  "name": "Elrond MyCollection",
+  "itemName": "MyCollection #{itemIndex}",
+  "description": "The unique Elrond MyCollection NFT Collection!",
+  "ipfsBaseUrl": "ipfs://NewUriToReplace",
+  "startNumber": 1,
+  "tags": [
+    "MyCollection",
+    "TrustStaking",
+    "Digital",
+    "Premium",
+    "Rarity",
+    "VIP",
+    "Unique"
+  ],
+  "directories": {
+    "layers": "./layers",
+    "output": "./build"
+  },
+  "royalty": 1000,
+  "image": {
+    "smoothing": true,
+    "width": 1000,
+    "height": 1375
+  },
+  "layersConfiguration": [
+    {
+      "growEditionSizeTo": 5000,
+      "layersOrder": [
+        {
+          "name": "Body"
+        },
+        {
+          "name": "Head"
+        }
+      ]
+    },
+    {
+      "growEditionSizeTo": 7000,
+      "layersOrder": [
+        {
+          "name": "Body"
+        },
+        {
+          "name": "Head"
+        }
+      ]
+    }
+  ]
+}
