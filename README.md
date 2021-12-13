@@ -19,7 +19,7 @@ $ npm install -g @xterr/nft-generator
 $ nft-generator COMMAND
 running command...
 $ nft-generator (-v|--version|version)
-@xterr/nft-generator/0.0.0 darwin-x64 node-v16.13.0
+@xterr/nft-generator/1.0.0 darwin-x64 node-v16.13.0
 $ nft-generator --help [COMMAND]
 USAGE
   $ nft-generator COMMAND
@@ -28,28 +28,31 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`nft-generator hello [FILE]`](#nft-generator-hello-file)
+* [`nft-generator generate COLLECTIONDIR`](#nft-generator-generate-collectiondir)
 * [`nft-generator help [COMMAND]`](#nft-generator-help-command)
 
-## `nft-generator hello [FILE]`
+## `nft-generator generate COLLECTIONDIR`
 
-describe the command here
+Generate NFTs
 
 ```
 USAGE
-  $ nft-generator hello [FILE]
+  $ nft-generator generate COLLECTIONDIR
+
+ARGUMENTS
+  COLLECTIONDIR  Directory where the collection metadata is stored
 
 OPTIONS
   -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help            show CLI help
+  -n, --network=(egld)  [default: egld]
+  -v, --verbose
 
 EXAMPLE
-  $ nft-generator hello
-  hello world from ./src/hello.ts!
+  $ nft-generator generate <collection_dir>
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/xterr/nft-generator/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/generate.ts](https://github.com/xterr/nft-generator/blob/v1.0.0/src/commands/generate.ts)_
 
 ## `nft-generator help [COMMAND]`
 
